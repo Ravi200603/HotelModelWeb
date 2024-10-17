@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Details</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./Js/script.js"></script>
+    <style>
+      body {
+        background: url("./Images/formbg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -2;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var confirmButton = document.getElementById("form__btn");
+        var firstName = document.getElementById("firstname");
+        var lastName = document.getElementById("lastname");
+        var email = document.getElementById("E-mail");
+        var address = document.getElementById("Area");
+
+        confirmButton.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          var errors = "";
+
+          if (firstName.value.trim() === "") {
+            errors += "Please enter your first name.\n";
+          }
+
+          if (lastName.value.trim() === "") {
+            errors += "Please enter your last name.\n";
+          }
+
+          var emailPattern = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+          if (!emailPattern.test(email.value)) {
+            errors += "Please enter a valid email address.\n";
+          }
+
+          if (address.value.trim() === "") {
+            errors += "Please enter your address.\n";
+          }
+
+          if (errors) {
+            alert(errors);
+          } else {
+            window.location.href = "confirmation.html";
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div id="logo">
+          <a href="crossrefrence.html">
+            <img src="images/logo.png" alt="Logo"
+          /></a>
+        </div>
+        <ul>
+          <li class="item"><a href="index.html"> Home </a></li>
+          <li class="item"><a href="aboutus.html"> About Us </a></li>
+          <li class="item"><a href="contactus.html"> Contact Us</a></li>
+        </ul>
+        <span class="right"
+          >1647 Tranquilline Road <br />
+          Kamloops, BC, V2C7C9</span
+        >
+      </nav>
+    </header>
+    <div id="form__table">
+      <h3>Enter your Details</h3>
+      <form action="#">
+        <div class="form__formgrp"></div>
+        <div>
+          <input
+            type="text"
+            id="firstname"
+            placeholder="Enter Your Name"
+            required
+            minlength="5"
+            maxlength="25"
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            id="lastname"
+            placeholder="Enter Last Name"
+            required
+            minlength="5"
+            maxlength="25"
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            id="E-mail"
+            placeholder="Your E-mail Address"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          />
+        </div>
+        <div>
+          <textarea
+            cols="30"
+            rows="10"
+            id="Area"
+            placeholder="Enter Your Address"
+          ></textarea>
+        </div>
+        <div>
+          <a href="confirmation.html" id="form__btn">Confirm Registration</a>
+          <!--Form Validation using js-->
+        </div>
+      </form>
+      <span class="alert"
+        >*Our Online Payment is unavailable at the moment, and we are extremely
+        sorry for Inconvience</span
+      >
+    </div>
+    <footer>
+      <div class="Footer">
+        <div class="leftside" id="lastUpdated">LastUpdated</div>
+        <div class="mid">
+          <a href="tel:(250)-777-7674" class="phone"
+            >Call Us on: +1 (250)-777-7674
+          </a>
+        </div>
+        <div class="rightside">
+          <a href="mailto:KamloopInn18@gmail.Com"
+            >Email us at:KamloopInn18@gmail.com</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

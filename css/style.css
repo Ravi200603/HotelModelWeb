@@ -1,0 +1,308 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body#a {
+  background: url("../Images/123.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -2;
+  font-family: "baloo bhai";
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+}
+div#logo {
+  width: 10%;
+}
+/* Nav Logo and Image */
+#logo img {
+  border: 2px solid;
+  height: 100%;
+  width: 60%;
+  margin: 10px 30px;
+  border-radius: 50px;
+}
+/* Nav List Styling */
+#navbar {
+  position: relative;
+  font-family: "baloo bhai";
+}
+#navbar ul {
+  display: flex;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+#navbar ul li {
+  display: flex;
+  list-style: none;
+  font-size: 1.3em;
+  align-items: center;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px 45px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+}
+#navbar ul li a:hover {
+  background-color: grey;
+  color: black;
+}
+#logo {
+  filter: invert(0.75);
+}
+.Footer {
+  float: left;
+  margin-bottom: 0%;
+  margin-top:5%;
+  padding-top: 1.5%;
+  padding-bottom: 0%;
+  background-color: black;
+  color: White;
+  font-weight: bold;
+  font-size: 18px;
+  width: 100%;
+  height: 60px;
+  z-index: -1;
+  opacity: 0.7;
+}
+.Footer div a {
+  padding: 20px 0px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+}
+.leftside {
+  margin-left: 2%;
+  display: inline-block;
+  width: 30%;
+}
+.mid {
+  margin-left: 2%;
+  display: inline-block;
+  width: 30%;
+}
+.rightside {
+  margin-right: 0%;
+  display: inline-block;
+}
+.Footer a:hover {
+  background-color: grey;
+  color: black;
+  border-radius: 30px;
+}
+.h-primary {
+  margin-top: 3%;
+  position: absolute;
+  left: 34%;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+.table {
+  border-collapse: collapse;
+  margin-top: 150px;
+  color: White;
+  width: 51%;
+  height: 50%;
+  border: 6px solid White;
+  border-radius: 20px;
+  padding: 4% 2%;
+}
+.formgrp input {
+  text-align: Center;
+  display: block;
+  width: 69%;
+  padding: 7px 15px;
+  margin: 2px 42px;
+  border: 2px solid black;
+  font-size: 22px;
+  border-radius: 20px;
+}
+table h1 {
+  text-align: left;
+}
+
+.formgrp a {
+  background-color: #009879;
+  height: 100%;
+  width: 25%;
+  color: white;
+  display: block;
+  margin-left: 40%;
+  border-radius: 30px;
+  padding-left: 105px;
+  padding-top: 2px;
+  font-size: 1.8em;
+  text-decoration: none;
+  font-family: "baloo-bhai";
+}
+.right {
+  color: White;
+  margin-left: 40%;
+  font-size: 1.5em;
+}
+
+/* Second page Rooms.html */
+img.room {
+  display: inline;
+  height: 250px;
+  width: 250px;
+}
+
+div.tably {
+  width: 90%;
+  margin-left: 5%;
+}
+.room {
+  display: block;
+  margin: 12.5;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-collapse: collapse;
+  margin: 25px 0px;
+  font-family: roboto;
+  font-size: 1.3em;
+  min-width: 400px;
+  border-radius: 5px 5px 0px 0px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 1.5);
+}
+.room th {
+  background-color: #009879;
+  color: white;
+  font-weight: bold;
+}
+.room th,
+td {
+  padding: 12px 20px;
+}
+.room tr {
+  border-bottom: 1px solid grey;
+}
+.room tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+.room tr:last-of-type {
+  border-bottom: #009879;
+}
+.room tr:hover {
+  font-weight: bold;
+  color: #009879;
+}
+.page2b {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  height: 20px;
+  background-color: #009879;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 1.5);
+  margin-bottom: 2%;
+}
+
+/* Form.html */
+
+#form__table {
+  border: 6px solid whitesmoke;
+  border-radius: 20px;
+  width: 45%;
+  margin-left: 36%;
+  margin-top: 12%;
+  padding: 7px 15px;
+  margin-bottom: 2%;
+}
+#form__table h3 {
+  color: white;
+  font-family: "baloo bhai";
+  font-size: 1.9em;
+  text-align: left;
+}
+
+#form__table input,
+textarea,
+button {
+  text-align: center;
+  display: block;
+  width: 72%;
+  padding: 7px 15px;
+  margin: 2px 43px;
+  color: BLACK;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+#form__table a {
+  display: block;
+  background-color: #009879;
+  border-radius: 13px;
+  color: white;
+  height: 35px;
+  width: 250px;
+  margin-left: 46%;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+}
+.alert {
+  color: white;
+  font-size: 0.85em;
+  background-color: #009879;
+}
+
+/* Confirmation Page */
+section.c__s {
+  margin: 3px 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 344px;
+  justify-content: center;
+}
+p.c__p {
+  padding: 15px;
+  font-family: "baloo-bhai";
+  font-size: 1.3em;
+}
+p.c12 {
+  text-align: right;
+  padding-right: 50px;
+  font-size: 1.4em;
+}
+h3.c__h {
+  font-size: 4em;
+}
+div.c__d {
+  border: 5px solid white;
+  border-radius: 20px;
+  width: 75%;
+  height: 100%;
+}
+h3.c__h3 {
+  font-size: 4em;
+  margin-top: 12.5%;
+}
+.error {
+  color: red;
+  padding-left: 250px;
+  font-size: 1.5em;
+}
+
+
+

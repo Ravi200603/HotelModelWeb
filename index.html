@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kamloops Inn | A glory to the City</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./Js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        function real() {
+          var RealTime = document.getElementById("lastUpdated");
+          var a = new Date();
+          var b = String(a.getHours());
+          var c = String(a.getMinutes());
+          var d = String(a.getSeconds());
+          RealTime.textContent = "Time" + ":- " + b + ":" + c + ":" + d;
+        }
+        setInterval(real, 1000);
+      });
+    </script>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .h-primary {
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+      }
+    </style>
+  </head>
+  <body id="a">
+    <div class="videobg"></div>
+    <header>
+      <nav id="navbar">
+        <div id="logo">
+          <a href="crossrefrence.html">
+            <img src="images/logo.png" alt="Logo"
+          /></a>
+        </div>
+        <ul>
+          <li class="item"><a href="index.html"> Home </a></li>
+          <li class="item"><a href="aboutus.html"> About Us </a></li>
+          <li class="item"><a href="contactus.html"> Contact Us</a></li>
+        </ul>
+        <span class="right"
+          >1647 Tranquilline Road <br />
+          Kamloops, BC, V2C7C9</span
+        >
+      </nav>
+    </header>
+    <section id="home">
+      <h1 class="h-primary">Welcome to Kamloops Inn &copy;</h1>
+    </section>
+    <div class="table">
+      <h1>Please Fill the Your stay Details:-</h1>
+      <form name="myform" id="form" action="#">
+        <div class="formgrp">
+          <div>
+            <input
+              type="Text"
+              placeholder="Check-in Date"
+              id="check-indate"
+              onfocus="this.type='date'"
+              onblur="(this.type='text')"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="Text"
+              placeholder="Check-out Date"
+              id="check-outdate"
+              onfocus="this.type='date'"
+              onblur="(this.type='text')"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="number"
+              placeholder="No of Adults"
+              required
+              id="adults"
+            />
+          </div>
+          <div>
+            <input type="number" placeholder="No of Children" id="child" />
+          </div>
+          <div>
+            <a class="search" href="./rooms.html">Search</a>
+            <div class="error">Please all Fields correctly to proceed</div>
+            <!-- Form Validation Using js-->
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer>
+      <div class="Footer">
+        <div class="leftside" id="lastUpdated">LastUpdated</div>
+        <div class="mid">
+          <a href="tel:(250)-777-7674" class="phone"
+            >Call Us on: +1 (250)-777-7674
+          </a>
+        </div>
+        <div class="rightside">
+          <a href="mailto:KamloopInn18@gmail.Com"
+            >Email us at:KamloopInn18@gmail.com</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      body {
+        background: url("./Images/formbg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -2;
+      }
+      #form__table {
+        margin-top: 2%;
+      }
+      .form__btn {
+        margin-left: 11%;
+        background-color: #009879;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+      div.h1 {
+        color: white;
+        margin-top: 10%;
+        margin-left: 10%;
+        font-size: 3em;
+        font-family: "baloo-bhai";
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var submitBtn = document.getElementById("submitBtn");
+
+        submitBtn.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          var firstName = document.getElementById("firstname").value;
+          var lastName = document.getElementById("lastname").value;
+          var email = document.getElementById("E-mail").value;
+          var confirmationId = document.getElementById("Confirmation").value;
+          var query = document.querySelector("textarea").value;
+
+          if (!firstName || !lastName || !email || !confirmationId || !query) {
+            alert("Please fill in all required fields.");
+          } else {
+            alert("Form Submitted Successfully");
+          }
+        });
+      });
+    </script>
+    <script src="./Js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div id="logo">
+          <a href="crossrefrence.html">
+            <img src="images/logo.png" alt="Logo"
+          /></a>
+        </div>
+        <ul>
+          <li class="item"><a href="index.html"> Home </a></li>
+          <li class="item"><a href="aboutus.html"> About Us </a></li>
+          <li class="item"><a href="contactus.html"> Contact Us</a></li>
+        </ul>
+        <span class="right"
+          >1647 Tranquilline Road <br />
+          Kamloops, BC, V2C7C9</span
+        >
+      </nav>
+    </header>
+    <div class="h1">Fill the Form Below, Our team will contact you</div>
+    <div id="form__table">
+      <h3>Necessary Information to Proceed</h3>
+      <form action="#">
+        <div class="form__formgrp"></div>
+        <div>
+          <input
+            type="text"
+            id="firstname"
+            placeholder="Enter Your Name"
+            required\
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            id="lastname"
+            placeholder="Enter Last Name"
+            required
+          />
+        </div>
+        <div>
+          <input type="email" id="E-mail" placeholder="Your E-mail Address" />
+        </div>
+        <div>
+          <input
+            type="text"
+            id="Confirmation"
+            placeholder="Confirmation Id (Must be On your Email)"
+          />
+        </div>
+        <div>
+          <textarea
+            placeholder="Describe Your Reuirements or Query..."
+            required
+          ></textarea>
+        </div>
+        <div>
+          <button class="form__btn" id="submitBtn">Send Request</button>
+          <!--Form Validation using js--><!--Confirmation Dialog Box-->
+        </div>
+      </form>
+      <span class="alert"
+        >Our support team is activate 24*7, and they will send you an E-mail
+        regarding your special request</span
+      >
+    </div>
+    <footer>
+      <div class="Footer">
+        <div class="leftside" id="lastUpdated">LastUpdated</div>
+        <div class="mid">
+          <a href="tel:(250)-777-7674" class="phone"
+            >Call Us on: +1 (250)-777-7674
+          </a>
+        </div>
+        <div class="rightside">
+          <a href="mailto:KamloopInn18@gmail.Com"
+            >Email us at:KamloopInn18@gmail.com</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

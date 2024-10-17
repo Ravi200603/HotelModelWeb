@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Types</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./Js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var lastUpdated = document.getElementById("lastUpdated");
+        var lastUpdated2 = document.lastModified;
+        lastUpdated.textContent = "Last Updated: " + lastUpdated2;
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div id="logo">
+          <a href="crossrefrence.html">
+            <img src="images/logo.png" alt="Logo"
+          /></a>
+        </div>
+        <ul>
+          <li class="item"><a href="index.html"> Home </a></li>
+          <li class="item"><a href="aboutus.html"> About Us </a></li>
+          <li class="item"><a href="contactus.html"> Contact Us</a></li>
+        </ul>
+        <span class="right"
+          >1647 Tranquilline Road <br />
+          Kamloops, BC, V2C7C9</span
+        >
+      </nav>
+    </header>
+    <div class="tably">
+      <table class="room">
+        <tr>
+          <th>Room Type</th>
+          <th>Description</th>
+          <th>Price per Night</th>
+          <th>Availability</th>
+          <th>Pictures</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>NQQ1 | Two Queen Beds *Pet Friendly</td>
+          <td>
+            A room with 2 queen beds, TV, Air conditioner, Coffee Maker, and
+            basic essentials
+          </td>
+          <td>$99</td>
+          <td>Yes</td>
+          <td><img class="room" src="Images/NQQ1.png" alt="" /></td>
+          <td><input type="checkbox" class="table-button" /> NQQ1</td>
+        </tr>
+        <tr>
+          <td>SNQ1 | A Queen Bed With Private space for bedroom</td>
+          <td>
+            A room with queen bed, TV, Air conditioner, Coffee Maker, Kitchen,
+            and basic essentials
+          </td>
+          <td>$139</td>
+          <td>Yes</td>
+          <td><img class="room" src="Images/SNQ1.png" alt="" /></td>
+          <td><input type="checkbox" class="table-button" /> SNQ1</td>
+        </tr>
+        <tr>
+          <td>NK1 | King Bed *Pet Friendly</td>
+          <td>
+            A room with King bed, TV, Air conditioner, Coffee Maker, and basic
+            essentials
+          </td>
+          <td>$189</td>
+          <td>Yes</td>
+          <td><img class="room" src="Images/NK1.png" alt="" /></td>
+          <td><input type="checkbox" class="table-button" /> NK1</td>
+        </tr>
+        <tr>
+          <td>SNK1 | A King Bed with Hot jacuzzi tub</td>
+          <td>
+            A room with queen bed, TV, Air conditioner, Coffee Maker, Kitchen,
+            jacuzzi Hot Tub, and basic essentials
+          </td>
+          <td>$249</td>
+          <td>Available but Limited</td>
+          <td><img class="room" src="Images/SNK1.png" alt="" /></td>
+          <td><input type="checkbox" class="table-button" /> SNK1</td>
+        </tr>
+      </table>
+      <a href="form.html" class="page2b">Continue</a
+      ><!--Form Validation Using js-->
+    </div>
+    <footer>
+      <div class="Footer">
+        <div class="leftside" id="lastUpdated">LastUpdated</div>
+        <div class="mid">
+          <a href="tel:(250)-777-7674" class="phone"
+            >Call Us on: +1 (250)-777-7674
+          </a>
+        </div>
+        <div class="rightside">
+          <a href="mailto:KamloopInn18@gmail.Com"
+            >Email us at:KamloopInn18@gmail.com</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
